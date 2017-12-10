@@ -8,8 +8,8 @@ describe("Food", function(){
   let pretzels;
 
   beforeEach(function(){
-    hotDogs = new Food("Hot Dogs", 20);
-    pretzels = new Food("Pretzels", 20);
+    hotDogs = new Food("Hot Dogs");
+    pretzels = new Food("Pretzels");
   })
 
   it("should have a name", function(){
@@ -17,7 +17,7 @@ describe("Food", function(){
   });
 
 it("should have a replenishment value", function(){
-  assert.strictEqual(pretzels.replenish, 20)
+  assert.strictEqual(pretzels.replenish, 10)
 })
 
 

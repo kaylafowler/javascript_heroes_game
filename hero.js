@@ -9,4 +9,18 @@ Hero.prototype.speak = function(){
   return `Do not fear, ${this.name} is here!`
 }
 
+Hero.prototype.eat = function(food){
+  if (food === this.favFood){
+    this.health += (food.replenish * 1.5);
+  }
+  else {
+    this.health += food.replenish;
+  }
+};
+
+
+Hero.prototype.addTask = function(task){
+  this.tasks.push(task)
+};
+
 module.exports = Hero;

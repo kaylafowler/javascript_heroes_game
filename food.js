@@ -1,6 +1,6 @@
-const Food = function(name, replenish){
+const Food = function(name){
 this.name = name;
-this.replenish = replenish;
+this.replenish = 10;
 };
 
 module.exports = Food;
